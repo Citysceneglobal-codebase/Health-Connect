@@ -1,0 +1,1713 @@
+{
+  "appointments": [
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "appointmentDate": "2024-12-15",
+      "appointmentTime": "10:00",
+      "reason": "Regular checkup",
+      "status": "completed",
+      "notes": "Patient reports feeling well. Blood pressure normal.",
+      "queuePosition": null,
+      "estimatedWaitTime": null,
+      "checkInTime": null,
+      "startedAt": "2024-12-15T04:30:00.000Z",
+      "completedAt": "2024-12-15T05:00:00.000Z",
+      "createdAt": "2024-12-10T00:00:00.000Z",
+      "updatedAt": "2024-12-15T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": "dev-user",
+      "doctorId": 2,
+      "appointmentDate": "2025-01-10",
+      "appointmentTime": "14:30",
+      "reason": "Cardiac consultation",
+      "status": "confirmed",
+      "notes": "Follow-up for hypertension management",
+      "queuePosition": null,
+      "estimatedWaitTime": null,
+      "checkInTime": null,
+      "startedAt": null,
+      "completedAt": null,
+      "createdAt": "2024-12-20T00:00:00.000Z",
+      "updatedAt": "2024-12-20T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "appointmentDate": "2025-02-05",
+      "appointmentTime": "09:00",
+      "reason": "Annual physical",
+      "status": "pending",
+      "notes": "Routine annual examination",
+      "queuePosition": null,
+      "estimatedWaitTime": null,
+      "checkInTime": null,
+      "startedAt": null,
+      "completedAt": null,
+      "createdAt": "2024-12-25T00:00:00.000Z",
+      "updatedAt": "2024-12-25T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "appointmentDate": "2024-12-20",
+      "appointmentTime": "11:00",
+      "reason": "Follow-up consultation",
+      "status": "confirmed",
+      "notes": "Checking medication effectiveness",
+      "queuePosition": null,
+      "estimatedWaitTime": null,
+      "checkInTime": null,
+      "startedAt": null,
+      "completedAt": null,
+      "createdAt": "2024-12-15T00:00:00.000Z",
+      "updatedAt": "2024-12-15T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "patientId": "patient-2",
+      "doctorId": 3,
+      "appointmentDate": "2024-12-18",
+      "appointmentTime": "15:00",
+      "reason": "Knee pain evaluation",
+      "status": "completed",
+      "notes": "Patient experiencing knee pain after sports injury",
+      "queuePosition": null,
+      "estimatedWaitTime": null,
+      "checkInTime": null,
+      "startedAt": "2024-12-18T09:30:00.000Z",
+      "completedAt": "2024-12-18T10:15:00.000Z",
+      "createdAt": "2024-12-12T00:00:00.000Z",
+      "updatedAt": "2024-12-18T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "patientId": "patient-3",
+      "doctorId": 4,
+      "appointmentDate": "2025-01-15",
+      "appointmentTime": "10:30",
+      "reason": "Skin rash consultation",
+      "status": "confirmed",
+      "notes": "Persistent skin rash on arms and legs",
+      "queuePosition": null,
+      "estimatedWaitTime": null,
+      "checkInTime": null,
+      "startedAt": null,
+      "completedAt": null,
+      "createdAt": "2024-12-22T00:00:00.000Z",
+      "updatedAt": "2024-12-22T00:00:00.000Z"
+    },
+    {
+      "patientId": "dev-user",
+      "doctorId": 2,
+      "appointmentDate": "2025-12-20",
+      "appointmentTime": "11:30",
+      "reason": "",
+      "id": 1766044022964,
+      "status": "pending",
+      "createdAt": "2025-12-18T07:47:02.964Z",
+      "updatedAt": "2025-12-18T07:47:02.964Z"
+    },
+    {
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "appointmentDate": "2025-12-30",
+      "appointmentTime": "10:00",
+      "reason": "",
+      "id": 1766984730443,
+      "status": "pending",
+      "createdAt": "2025-12-29T05:05:30.443Z",
+      "updatedAt": "2025-12-29T05:05:30.443Z"
+    },
+    {
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "appointmentDate": "2025-12-30",
+      "appointmentTime": "15:00",
+      "reason": "",
+      "id": 1766999240069,
+      "status": "completed",
+      "createdAt": "2025-12-29T09:07:20.069Z",
+      "updatedAt": "2025-12-29T11:20:50.442Z"
+    },
+    {
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "appointmentDate": "2026-01-01",
+      "appointmentTime": "10:00",
+      "reason": "",
+      "id": 1767158253381,
+      "status": "completed",
+      "createdAt": "2025-12-31T05:17:33.381Z",
+      "updatedAt": "2025-12-31T05:19:55.467Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "Hypertension",
+      "notes": "Patient to monitor blood pressure daily",
+      "appointmentId": 1,
+      "createdAt": "2024-12-15T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": "patient-2",
+      "doctorId": 3,
+      "diagnosis": "Knee sprain",
+      "notes": "Rest and ice for first 48 hours",
+      "appointmentId": 5,
+      "createdAt": "2024-12-18T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "patientId": "patient-4",
+      "doctorId": 5,
+      "diagnosis": "Well child visit",
+      "notes": "Developmental milestones met, vaccinations up to date",
+      "appointmentId": 7,
+      "createdAt": "2024-12-16T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "patientId": "patient-5",
+      "doctorId": 6,
+      "diagnosis": "Chronic migraine",
+      "notes": "Initiating prophylactic therapy",
+      "appointmentId": 8,
+      "createdAt": "2024-12-17T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "patientId": "patient-6",
+      "doctorId": 7,
+      "diagnosis": "Routine gynecological exam",
+      "notes": "Normal findings, Pap smear ordered",
+      "appointmentId": 9,
+      "createdAt": "2024-12-19T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "patientId": "patient-7",
+      "doctorId": 8,
+      "diagnosis": "Cataract evaluation",
+      "notes": "Early cataracts detected, monitoring recommended",
+      "appointmentId": 10,
+      "createdAt": "2024-12-21T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "patientId": "patient-8",
+      "doctorId": 9,
+      "diagnosis": "Generalized anxiety disorder",
+      "notes": "Starting cognitive behavioral therapy",
+      "appointmentId": 11,
+      "createdAt": "2025-01-05T00:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "patientId": "patient-9",
+      "doctorId": 10,
+      "diagnosis": "Nephrolithiasis",
+      "notes": "Kidney stone disease, dietary modifications recommended",
+      "appointmentId": 12,
+      "createdAt": "2025-01-08T00:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "patientId": "patient-10",
+      "doctorId": 11,
+      "diagnosis": "Hypothyroidism",
+      "notes": "Initiating thyroid hormone replacement therapy",
+      "appointmentId": 13,
+      "createdAt": "2025-01-12T00:00:00.000Z"
+    },
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "Hypertension",
+      "notes": "Patient to monitor blood pressure daily",
+      "appointmentId": 1,
+      "createdAt": "2024-12-15T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": "patient-2",
+      "doctorId": 3,
+      "diagnosis": "Knee sprain",
+      "notes": "Rest and ice for first 48 hours",
+      "appointmentId": 5,
+      "createdAt": "2024-12-18T00:00:00.000Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "kugui",
+      "id": 1767075560933,
+      "createdAt": "2025-12-30T06:19:20.933Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "oug",
+      "id": 1767075700661,
+      "createdAt": "2025-12-30T06:21:40.661Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "oug",
+      "id": 1767081840476,
+      "createdAt": "2025-12-30T08:04:00.476Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "oug",
+      "id": 1767081847995,
+      "createdAt": "2025-12-30T08:04:07.995Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "oug",
+      "id": 1767081850716,
+      "createdAt": "2025-12-30T08:04:10.716Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "oug",
+      "id": 1767081850846,
+      "createdAt": "2025-12-30T08:04:10.846Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "oug",
+      "id": 1767081851498,
+      "createdAt": "2025-12-30T08:04:11.498Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "oug",
+      "id": 1767081851632,
+      "createdAt": "2025-12-30T08:04:11.632Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "mbv",
+      "id": 1767085253072,
+      "createdAt": "2025-12-30T09:00:53.072Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "jyf",
+      "id": 1767088775610,
+      "createdAt": "2025-12-30T09:59:35.610Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "h",
+      "id": 1767094751190,
+      "createdAt": "2025-12-30T11:39:11.190Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "gg",
+      "id": 1767094965919,
+      "createdAt": "2025-12-30T11:42:45.919Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "jhfyh",
+      "id": 1767095173960,
+      "createdAt": "2025-12-30T11:46:13.960Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "Vishi",
+      "id": 1767095196236,
+      "createdAt": "2025-12-30T11:46:36.236Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "diagnosis": "vishi",
+      "id": 1767096604789,
+      "createdAt": "2025-12-30T12:10:04.789Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767096824061,
+      "createdAt": "2025-12-30T12:13:44.061Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767096904656,
+      "createdAt": "2025-12-30T12:15:04.656Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767096905961,
+      "createdAt": "2025-12-30T12:15:05.961Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767096906111,
+      "createdAt": "2025-12-30T12:15:06.111Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767096906401,
+      "createdAt": "2025-12-30T12:15:06.401Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767096906638,
+      "createdAt": "2025-12-30T12:15:06.638Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767097514432,
+      "createdAt": "2025-12-30T12:25:14.432Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hiv",
+      "id": 1767097517722,
+      "createdAt": "2025-12-30T12:25:17.722Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767097754039,
+      "createdAt": "2025-12-30T12:29:14.039Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767097809446,
+      "createdAt": "2025-12-30T12:30:09.446Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767097810373,
+      "createdAt": "2025-12-30T12:30:10.373Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767097810502,
+      "createdAt": "2025-12-30T12:30:10.502Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767097810663,
+      "createdAt": "2025-12-30T12:30:10.663Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767097810906,
+      "createdAt": "2025-12-30T12:30:10.906Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767156577119,
+      "createdAt": "2025-12-31T04:49:37.119Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767156942970,
+      "createdAt": "2025-12-31T04:55:42.970Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767156946197,
+      "createdAt": "2025-12-31T04:55:46.197Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767156951720,
+      "createdAt": "2025-12-31T04:55:51.720Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767156952470,
+      "createdAt": "2025-12-31T04:55:52.470Z"
+    },
+    {
+      "appointmentId": null,
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": "hh",
+      "id": 1767158193548,
+      "createdAt": "2025-12-31T05:16:33.548Z"
+    },
+    {
+      "patientId": "dev-user",
+      "doctorId": 1,
+      "diagnosis": null,
+      "notes": null,
+      "appointmentId": 1767158253381,
+      "id": 1767158395472,
+      "createdAt": "2025-12-31T05:19:55.472Z"
+    }
+  ],
+  "prescriptionItems": [
+    {
+      "id": 1,
+      "prescriptionId": 1,
+      "medicineId": 2,
+      "dosage": "10mg",
+      "frequency": "Once daily",
+      "duration": "30 days",
+      "instructions": "Take with food in the morning"
+    },
+    {
+      "id": 2,
+      "prescriptionId": 1,
+      "medicineId": 1,
+      "dosage": "81mg",
+      "frequency": "Once daily",
+      "duration": "30 days",
+      "instructions": "Take with food"
+    },
+    {
+      "id": 3,
+      "prescriptionId": 2,
+      "medicineId": 5,
+      "dosage": "400mg",
+      "frequency": "Every 6 hours as needed",
+      "duration": "7 days",
+      "instructions": "Take with food, not to exceed 2400mg per day"
+    },
+    {
+      "id": 4,
+      "prescriptionId": 3,
+      "medicineId": 1,
+      "dosage": "81mg",
+      "frequency": "Once daily",
+      "duration": "Ongoing",
+      "instructions": "Take with breakfast for cardiovascular protection"
+    },
+    {
+      "id": 5,
+      "prescriptionId": 4,
+      "medicineId": 13,
+      "dosage": "100mg",
+      "frequency": "Three times daily",
+      "duration": "30 days",
+      "instructions": "Take with meals, may cause drowsiness"
+    },
+    {
+      "id": 6,
+      "prescriptionId": 5,
+      "medicineId": 6,
+      "dosage": "500mg",
+      "frequency": "Three times daily",
+      "duration": "10 days",
+      "instructions": "Take with food, complete full course"
+    },
+    {
+      "id": 7,
+      "prescriptionId": 6,
+      "medicineId": 1,
+      "dosage": "81mg",
+      "frequency": "Once daily",
+      "duration": "Ongoing",
+      "instructions": "Take with breakfast"
+    },
+    {
+      "id": 8,
+      "prescriptionId": 7,
+      "medicineId": 14,
+      "dosage": "20mg",
+      "frequency": "Once daily",
+      "duration": "30 days",
+      "instructions": "Take in morning, may take 2-4 weeks for full effect"
+    },
+    {
+      "id": 9,
+      "prescriptionId": 8,
+      "medicineId": 15,
+      "dosage": "20mg",
+      "frequency": "Once daily",
+      "duration": "Ongoing",
+      "instructions": "Take in morning, monitor blood pressure"
+    },
+    {
+      "id": 10,
+      "prescriptionId": 9,
+      "medicineId": 9,
+      "dosage": "50mcg",
+      "frequency": "Once daily",
+      "duration": "Ongoing",
+      "instructions": "Take on empty stomach, monitor thyroid levels"
+    },
+    {
+      "prescriptionId": 1767094965919,
+      "medicineId": 6,
+      "dosage": "20mg",
+      "frequency": "Once daily",
+      "duration": "30 days",
+      "id": 1767094965922
+    },
+    {
+      "prescriptionId": 1767095173960,
+      "medicineId": 7,
+      "dosage": "20mg",
+      "frequency": "Once daily",
+      "duration": "30 days",
+      "id": 1767095173964
+    },
+    {
+      "prescriptionId": 1767095173960,
+      "medicineId": 2,
+      "dosage": "10mg",
+      "frequency": "Once daily",
+      "duration": "Continue as prescribed",
+      "instructions": "Continuing from previous prescription: Take with food in the morning",
+      "id": 1767095173969
+    },
+    {
+      "prescriptionId": 1767095173960,
+      "medicineId": 1,
+      "dosage": "81mg",
+      "frequency": "Once daily",
+      "duration": "Continue as prescribed",
+      "instructions": "Continuing from previous prescription: Take with food",
+      "id": 1767095173972
+    },
+    {
+      "prescriptionId": 1767095196236,
+      "medicineId": 4,
+      "dosage": "500mg",
+      "frequency": "Three times daily",
+      "duration": "7 days",
+      "id": 1767095196237
+    },
+    {
+      "prescriptionId": 1767095196236,
+      "medicineId": 2,
+      "dosage": "10mg",
+      "frequency": "Once daily",
+      "duration": "Continue as prescribed",
+      "instructions": "Continuing from previous prescription: Take with food in the morning",
+      "id": 1767095196239
+    },
+    {
+      "prescriptionId": 1767095196236,
+      "medicineId": 1,
+      "dosage": "81mg",
+      "frequency": "Once daily",
+      "duration": "Continue as prescribed",
+      "instructions": "Continuing from previous prescription: Take with food",
+      "id": 1767095196241
+    },
+    {
+      "prescriptionId": 1767096604789,
+      "medicineId": 9,
+      "dosage": "50mcg",
+      "frequency": "Once daily",
+      "duration": "Ongoing",
+      "id": 1767096604792
+    },
+    {
+      "prescriptionId": 1767158193548,
+      "medicineId": 4,
+      "dosage": "500mg",
+      "frequency": "Three times daily",
+      "duration": "7 days",
+      "id": 1767158193554
+    },
+    {
+      "prescriptionId": 1767158193548,
+      "medicineId": 2,
+      "dosage": "10mg",
+      "frequency": "Once daily",
+      "duration": "Continue as prescribed",
+      "instructions": "Continuing from previous prescription: Take with food in the morning",
+      "id": 1767158193561
+    },
+    {
+      "prescriptionId": 1767158193548,
+      "medicineId": 1,
+      "dosage": "81mg",
+      "frequency": "Once daily",
+      "duration": "Continue as prescribed",
+      "instructions": "Continuing from previous prescription: Take with food",
+      "id": 1767158193564
+    },
+    {
+      "prescriptionId": 1767158395472,
+      "medicineId": 1,
+      "dosage": "500mg",
+      "frequency": "2",
+      "duration": "5",
+      "instructions": "",
+      "id": 1767158395474
+    },
+    {
+      "prescriptionId": 1767158395472,
+      "medicineId": 3,
+      "dosage": "500mg",
+      "frequency": "2",
+      "duration": "6",
+      "instructions": "",
+      "id": 1767158395476
+    }
+  ],
+  "vitals": [
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "type": "bp",
+      "value": "140/90",
+      "unit": "mmHg",
+      "recordedAt": "2024-12-15T04:30:00.000Z",
+      "notes": "Taken during routine checkup"
+    },
+    {
+      "id": 2,
+      "patientId": "dev-user",
+      "type": "heart_rate",
+      "value": "72",
+      "unit": "bpm",
+      "recordedAt": "2024-12-15T04:30:00.000Z",
+      "notes": "Taken during routine checkup"
+    },
+    {
+      "id": 3,
+      "patientId": "dev-user",
+      "type": "weight",
+      "value": "180",
+      "unit": "lbs",
+      "recordedAt": "2024-12-15T04:30:00.000Z",
+      "notes": "Taken during routine checkup"
+    },
+    {
+      "id": 4,
+      "patientId": "dev-user",
+      "type": "bp",
+      "value": "135/85",
+      "unit": "mmHg",
+      "recordedAt": "2024-12-20T09:00:00.000Z",
+      "notes": "Follow-up measurement"
+    },
+    {
+      "id": 5,
+      "patientId": "patient-1",
+      "type": "bp",
+      "value": "120/80",
+      "unit": "mmHg",
+      "recordedAt": "2024-12-18T05:30:00.000Z",
+      "notes": "Pre-operative vitals"
+    }
+  ],
+  "allergies": [
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "type": "medicine",
+      "allergen": "Penicillin",
+      "severity": "severe",
+      "reaction": "Anaphylaxis",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": "dev-user",
+      "type": "food",
+      "allergen": "Shellfish",
+      "severity": "moderate",
+      "reaction": "Hives, nausea",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "patientId": "patient-2",
+      "type": "other",
+      "allergen": "Latex",
+      "severity": "mild",
+      "reaction": "Contact dermatitis",
+      "createdAt": "2024-02-15T00:00:00.000Z"
+    }
+  ],
+  "familyMembers": [
+    {
+      "id": 1,
+      "primaryUserId": "dev-user",
+      "memberId": "family-member-1",
+      "relationship": "Spouse",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "primaryUserId": "dev-user",
+      "memberId": "family-member-2",
+      "relationship": "Child",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "primaryUserId": "patient-1",
+      "memberId": "family-member-3",
+      "relationship": "Spouse",
+      "createdAt": "2024-02-01T00:00:00.000Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "title": "Blood Test Results - Dec 2024",
+      "type": "lab_report",
+      "description": "Complete blood count and metabolic panel",
+      "fileUrl": "/documents/blood-test-2024-12.pdf",
+      "uploadedBy": "dev-doctor",
+      "appointmentId": 1,
+      "createdAt": "2024-12-15T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": "dev-user",
+      "title": "ECG Report",
+      "type": "other",
+      "description": "Electrocardiogram results from cardiac consultation",
+      "fileUrl": "/documents/ecg-report-2024-12.pdf",
+      "uploadedBy": "doctor-1-user",
+      "appointmentId": 2,
+      "createdAt": "2024-12-20T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "patientId": "patient-2",
+      "title": "X-Ray Report - Left Knee",
+      "type": "radiology",
+      "description": "X-ray imaging of left knee joint",
+      "fileUrl": "/documents/knee-xray-2024-12.pdf",
+      "uploadedBy": "doctor-2-user",
+      "appointmentId": 5,
+      "createdAt": "2024-12-18T00:00:00.000Z"
+    }
+  ],
+  "bills": [
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "appointmentId": 1,
+      "amount": "150.00",
+      "description": "General consultation and blood pressure check",
+      "status": "paid",
+      "paymentMethod": "credit_card",
+      "paidAt": "2025-12-16T00:00:00.000Z",
+      "createdAt": "2025-12-15T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": "dev-user",
+      "appointmentId": 2,
+      "amount": "300.00",
+      "description": "Cardiac consultation and ECG",
+      "status": "pending",
+      "paymentMethod": null,
+      "paidAt": null,
+      "createdAt": "2025-12-20T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "patientId": "dev-user",
+      "appointmentId": null,
+      "amount": "75.00",
+      "description": "Follow-up medication consultation",
+      "status": "paid",
+      "paymentMethod": "cash",
+      "paidAt": "2025-12-10T00:00:00.000Z",
+      "createdAt": "2025-12-08T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "patientId": "dev-user",
+      "appointmentId": null,
+      "amount": "200.00",
+      "description": "Laboratory tests - Complete blood count",
+      "status": "paid",
+      "paymentMethod": "upi",
+      "paidAt": "2025-12-05T00:00:00.000Z",
+      "createdAt": "2025-12-03T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "patientId": "dev-user",
+      "appointmentId": null,
+      "amount": "350.00",
+      "description": "MRI scan - Brain",
+      "status": "pending",
+      "paymentMethod": null,
+      "paidAt": null,
+      "createdAt": "2025-12-22T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "patientId": "patient-1",
+      "appointmentId": 4,
+      "amount": "180.00",
+      "description": "Internal medicine consultation",
+      "status": "paid",
+      "paymentMethod": "credit_card",
+      "paidAt": "2025-12-21T00:00:00.000Z",
+      "createdAt": "2025-12-20T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "patientId": "patient-1",
+      "appointmentId": null,
+      "amount": "120.00",
+      "description": "Dental cleaning and checkup",
+      "status": "paid",
+      "paymentMethod": "cash",
+      "paidAt": "2025-12-15T00:00:00.000Z",
+      "createdAt": "2025-12-12T00:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "patientId": "patient-1",
+      "appointmentId": null,
+      "amount": "95.00",
+      "description": "Physical therapy session",
+      "status": "pending",
+      "paymentMethod": null,
+      "paidAt": null,
+      "createdAt": "2025-12-18T00:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "patientId": "patient-2",
+      "appointmentId": 5,
+      "amount": "450.00",
+      "description": "Orthopedic consultation and knee X-ray",
+      "status": "paid",
+      "paymentMethod": "insurance",
+      "paidAt": "2025-12-19T00:00:00.000Z",
+      "createdAt": "2025-12-18T00:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "patientId": "patient-2",
+      "appointmentId": null,
+      "amount": "280.00",
+      "description": "Sports medicine consultation",
+      "status": "paid",
+      "paymentMethod": "wallet",
+      "paidAt": "2025-12-01T00:00:00.000Z",
+      "createdAt": "2025-11-28T00:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "patientId": "patient-2",
+      "appointmentId": null,
+      "amount": "150.00",
+      "description": "Rehabilitation therapy",
+      "status": "paid",
+      "paymentMethod": "upi",
+      "paidAt": "2025-12-20T00:00:00.000Z",
+      "createdAt": "2025-12-18T00:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "patientId": "patient-3",
+      "appointmentId": 6,
+      "amount": "220.00",
+      "description": "Dermatology consultation and skin biopsy",
+      "status": "paid",
+      "paymentMethod": "credit_card",
+      "paidAt": "2025-12-16T00:00:00.000Z",
+      "createdAt": "2025-12-15T00:00:00.000Z"
+    },
+    {
+      "id": 13,
+      "patientId": "patient-3",
+      "appointmentId": null,
+      "amount": "85.00",
+      "description": "Allergy testing",
+      "status": "pending",
+      "paymentMethod": null,
+      "paidAt": null,
+      "createdAt": "2025-12-10T00:00:00.000Z"
+    },
+    {
+      "id": 14,
+      "patientId": "patient-3",
+      "appointmentId": null,
+      "amount": "175.00",
+      "description": "Immunotherapy treatment",
+      "status": "paid",
+      "paymentMethod": "cash",
+      "paidAt": "2025-12-15T00:00:00.000Z",
+      "createdAt": "2025-12-12T00:00:00.000Z"
+    },
+    {
+      "id": 15,
+      "patientId": "dev-user",
+      "appointmentId": null,
+      "amount": "425.00",
+      "description": "Emergency room visit",
+      "status": "paid",
+      "paymentMethod": "credit_card",
+      "paidAt": "2025-12-01T00:00:00.000Z",
+      "createdAt": "2025-12-01T00:00:00.000Z"
+    },
+    {
+      "id": 16,
+      "patientId": "patient-1",
+      "appointmentId": null,
+      "amount": "320.00",
+      "description": "Colonoscopy procedure",
+      "status": "paid",
+      "paymentMethod": "insurance",
+      "paidAt": "2025-12-02T00:00:00.000Z",
+      "createdAt": "2025-11-28T00:00:00.000Z"
+    },
+    {
+      "id": 17,
+      "patientId": "patient-2",
+      "appointmentId": null,
+      "amount": "195.00",
+      "description": "Physical therapy - 6 sessions",
+      "status": "paid",
+      "paymentMethod": "upi",
+      "paidAt": "2025-12-08T00:00:00.000Z",
+      "createdAt": "2025-12-01T00:00:00.000Z"
+    },
+    {
+      "id": 18,
+      "patientId": "patient-3",
+      "appointmentId": null,
+      "amount": "145.00",
+      "description": "Vaccination series",
+      "status": "paid",
+      "paymentMethod": "wallet",
+      "paidAt": "2025-12-05T00:00:00.000Z",
+      "createdAt": "2025-12-01T00:00:00.000Z"
+    },
+    {
+      "id": 19,
+      "patientId": "dev-user",
+      "appointmentId": null,
+      "amount": "275.00",
+      "description": "CT scan - Chest",
+      "status": "pending",
+      "paymentMethod": null,
+      "paidAt": null,
+      "createdAt": "2025-12-17T00:00:00.000Z"
+    },
+    {
+      "id": 20,
+      "patientId": "patient-1",
+      "appointmentId": null,
+      "amount": "90.00",
+      "description": "Nutrition counseling",
+      "status": "paid",
+      "paymentMethod": "cash",
+      "paidAt": "2025-12-12T00:00:00.000Z",
+      "createdAt": "2025-12-10T00:00:00.000Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "patientId": "dev-user",
+      "doctorId": 2,
+      "createdAt": "2024-12-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": "dev-user",
+      "doctorId": 4,
+      "createdAt": "2024-12-05T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "patientId": "patient-1",
+      "doctorId": 1,
+      "createdAt": "2024-12-10T00:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": "dev-user",
+      "title": "Appointment Reminder",
+      "message": "You have an appointment with Dr. Sarah Smith tomorrow at 2:30 PM",
+      "type": "appointment_reminder",
+      "priority": "high",
+      "isRead": false,
+      "data": {
+        "appointmentId": 2
+      },
+      "createdAt": "2024-12-19T04:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": "dev-user",
+      "title": "Prescription Ready",
+      "message": "Your prescription from Dr. Dev User is now available for pickup",
+      "type": "prescription_added",
+      "priority": "medium",
+      "isRead": true,
+      "data": {
+        "prescriptionId": 1
+      },
+      "createdAt": "2024-12-15T08:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": "dev-user",
+      "title": "Bill Payment Due",
+      "message": "Your bill for $300.00 is due on January 15, 2025",
+      "type": "payment_due",
+      "priority": "medium",
+      "isRead": false,
+      "data": {
+        "billId": 2
+      },
+      "createdAt": "2024-12-20T03:30:00.000Z"
+    },
+    {
+      "id": 4,
+      "userId": "dev-doctor",
+      "title": "New Appointment Booked",
+      "message": "John Doe has booked an appointment for December 20, 2024 at 11:00 AM",
+      "type": "appointment_confirmed",
+      "priority": "high",
+      "isRead": false,
+      "data": {
+        "appointmentId": 4
+      },
+      "createdAt": "2024-12-15T10:30:00.000Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "Appointment Booked",
+      "message": "Your appointment with Sarah Smith is confirmed for 2025-12-20 at 11:30",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1766044022967,
+      "createdAt": "2025-12-18T07:47:02.967Z"
+    },
+    {
+      "userId": "doctor-1-user",
+      "title": "New Appointment Booked",
+      "message": "Dev User has booked an appointment for 2025-12-20 at 11:30",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1766044022967,
+      "createdAt": "2025-12-18T07:47:02.967Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "Appointment Booked",
+      "message": "Your appointment with Dr. Dev User is confirmed for 2025-12-30 at 10:00",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1766984730449,
+      "createdAt": "2025-12-29T05:05:30.449Z"
+    },
+    {
+      "userId": "dev-doctor",
+      "title": "New Appointment Booked",
+      "message": "Dev User has booked an appointment for 2025-12-30 at 10:00",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1766984730451,
+      "createdAt": "2025-12-29T05:05:30.451Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "Appointment Booked",
+      "message": "Your appointment with Dr. Dev User is confirmed for 2025-12-30 at 15:00",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1766999240070,
+      "createdAt": "2025-12-29T09:07:20.070Z"
+    },
+    {
+      "userId": "dev-doctor",
+      "title": "New Appointment Booked",
+      "message": "Dev User has booked an appointment for 2025-12-30 at 15:00",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1766999240071,
+      "createdAt": "2025-12-29T09:07:20.071Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "Appointment Completed",
+      "message": "Your appointment has been marked as completed",
+      "type": "appointment",
+      "priority": "medium",
+      "id": 1766999290963,
+      "createdAt": "2025-12-29T09:08:10.963Z"
+    },
+    {
+      "userId": "dev-doctor",
+      "title": "Appointment Completed",
+      "message": "An appointment has been marked as completed",
+      "type": "appointment",
+      "priority": "low",
+      "id": 1766999290963,
+      "createdAt": "2025-12-29T09:08:10.963Z"
+    },
+    {
+      "userId": "dev-admin",
+      "title": "Appointment Completed",
+      "message": "Appointment completed for patient dev-user with doctor 1",
+      "type": "appointment",
+      "priority": "low",
+      "id": 1766999290991,
+      "createdAt": "2025-12-29T09:08:10.991Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "Appointment Completed",
+      "message": "Your appointment has been marked as completed",
+      "type": "appointment",
+      "priority": "medium",
+      "id": 1767007250444,
+      "createdAt": "2025-12-29T11:20:50.444Z"
+    },
+    {
+      "userId": "dev-doctor",
+      "title": "Appointment Completed",
+      "message": "An appointment has been marked as completed",
+      "type": "appointment",
+      "priority": "low",
+      "id": 1767007250445,
+      "createdAt": "2025-12-29T11:20:50.445Z"
+    },
+    {
+      "userId": "dev-admin",
+      "title": "Appointment Completed",
+      "message": "Appointment completed for patient dev-user with doctor 1",
+      "type": "appointment",
+      "priority": "low",
+      "id": 1767007250527,
+      "createdAt": "2025-12-29T11:20:50.527Z"
+    },
+    {
+      "userId": "patient-1",
+      "title": "New Prescription",
+      "message": "Dr. Dr. Dev User has added a new prescription to your records",
+      "type": "prescription",
+      "priority": "medium",
+      "id": 1767094966667,
+      "createdAt": "2025-12-30T11:42:46.667Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "New Prescription",
+      "message": "Dr. Dr. Dev User has added a new prescription to your records",
+      "type": "prescription",
+      "priority": "medium",
+      "id": 1767095174153,
+      "createdAt": "2025-12-30T11:46:14.153Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "New Prescription",
+      "message": "Dr. Dr. Dev User has added a new prescription to your records",
+      "type": "prescription",
+      "priority": "medium",
+      "id": 1767095198048,
+      "createdAt": "2025-12-30T11:46:38.048Z",
+      "isRead": true
+    },
+    {
+      "userId": "patient-1",
+      "title": "New Prescription",
+      "message": "Dr. Dr. Dev User has added a new prescription to your records",
+      "type": "prescription",
+      "priority": "medium",
+      "id": 1767096605868,
+      "createdAt": "2025-12-30T12:10:05.868Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "New Prescription",
+      "message": "Dr. Dr. Dev User has added a new prescription to your records",
+      "type": "prescription",
+      "priority": "medium",
+      "id": 1767158194375,
+      "createdAt": "2025-12-31T05:16:34.375Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "Appointment Booked",
+      "message": "Your appointment with Dr. Dev User is confirmed for 2026-01-01 at 10:00",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1767158253384,
+      "createdAt": "2025-12-31T05:17:33.384Z"
+    },
+    {
+      "userId": "dev-doctor",
+      "title": "New Appointment Booked",
+      "message": "Dev User has booked an appointment for 2026-01-01 at 10:00",
+      "type": "appointment",
+      "priority": "high",
+      "id": 1767158253384,
+      "createdAt": "2025-12-31T05:17:33.384Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "New Prescription",
+      "message": "Dr. Dr. Dev User has added a new prescription to your records",
+      "type": "prescription",
+      "priority": "medium",
+      "id": 1767158395479,
+      "createdAt": "2025-12-31T05:19:55.479Z"
+    },
+    {
+      "userId": "dev-user",
+      "title": "Appointment Completed",
+      "message": "Your appointment has been marked as completed",
+      "type": "appointment",
+      "priority": "medium",
+      "id": 1767158395481,
+      "createdAt": "2025-12-31T05:19:55.481Z"
+    },
+    {
+      "userId": "dev-doctor",
+      "title": "Appointment Completed",
+      "message": "An appointment has been marked as completed",
+      "type": "appointment",
+      "priority": "low",
+      "id": 1767158395482,
+      "createdAt": "2025-12-31T05:19:55.482Z"
+    },
+    {
+      "userId": "dev-admin",
+      "title": "Appointment Completed",
+      "message": "Appointment completed for patient dev-user with doctor 1",
+      "type": "appointment",
+      "priority": "low",
+      "id": 1767158395649,
+      "createdAt": "2025-12-31T05:19:55.649Z"
+    }
+  ],
+  "medicines": [
+    {
+      "id": 1,
+      "name": "Aspirin",
+      "genericName": "Acetylsalicylic Acid",
+      "description": "Pain reliever and anti-inflammatory",
+      "category": "Analgesic",
+      "manufacturer": "Bayer",
+      "dosageForm": "tablet",
+      "strength": "81mg, 325mg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Lisinopril",
+      "genericName": "Lisinopril",
+      "description": "ACE inhibitor for blood pressure",
+      "category": "Antihypertensive",
+      "manufacturer": "Various",
+      "dosageForm": "tablet",
+      "strength": "5mg, 10mg, 20mg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Metformin",
+      "genericName": "Metformin Hydrochloride",
+      "description": "Diabetes medication",
+      "category": "Antidiabetic",
+      "manufacturer": "Various",
+      "dosageForm": "tablet",
+      "strength": "500mg, 1000mg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Amoxicillin",
+      "genericName": "Amoxicillin",
+      "description": "Antibiotic for bacterial infections",
+      "category": "Antibiotic",
+      "manufacturer": "Various",
+      "dosageForm": "capsule",
+      "strength": "250mg, 500mg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "name": "Ibuprofen",
+      "genericName": "Ibuprofen",
+      "description": "NSAID for pain and inflammation",
+      "category": "Analgesic",
+      "manufacturer": "Various",
+      "dosageForm": "tablet",
+      "strength": "200mg, 400mg, 600mg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "senderId": "dev-user",
+      "receiverId": "doctor-1-user",
+      "subject": "Question about medication",
+      "content": "Hi Dr. Smith, I have a question about the medication you prescribed last week.",
+      "isRead": true,
+      "priority": "medium",
+      "appointmentId": null,
+      "expiresAt": null,
+      "createdAt": "2024-12-29T05:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "senderId": "doctor-1-user",
+      "receiverId": "dev-user",
+      "subject": "Re: Question about medication",
+      "content": "Hello! I'd be happy to help. What specific questions do you have about your medication?",
+      "isRead": true,
+      "priority": "medium",
+      "appointmentId": null,
+      "expiresAt": null,
+      "createdAt": "2024-12-29T05:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "senderId": "dev-user",
+      "receiverId": "doctor-1-user",
+      "subject": "Re: Question about medication",
+      "content": "Thank you! I wanted to know if I should take it with food or on an empty stomach.",
+      "isRead": false,
+      "priority": "medium",
+      "appointmentId": null,
+      "expiresAt": null,
+      "createdAt": "2024-12-29T08:50:00.000Z"
+    },
+    {
+      "id": 1767174035312,
+      "subject": "",
+      "content": "hi",
+      "senderId": "dev-doctor",
+      "receiverId": "patient-1",
+      "appointmentId": null,
+      "isRead": false,
+      "priority": "medium",
+      "expiresAt": null,
+      "createdAt": "2025-12-31T09:40:35.312Z"
+    },
+    {
+      "id": 1767174060410,
+      "subject": "",
+      "content": "hlooo",
+      "senderId": "dev-user",
+      "receiverId": "dev-doctor",
+      "appointmentId": null,
+      "isRead": true,
+      "priority": "medium",
+      "expiresAt": null,
+      "createdAt": "2025-12-31T09:41:00.410Z"
+    },
+    {
+      "id": 1767174069090,
+      "subject": "",
+      "content": "hiiii",
+      "senderId": "dev-user",
+      "receiverId": "dev-doctor",
+      "appointmentId": null,
+      "isRead": true,
+      "priority": "medium",
+      "expiresAt": null,
+      "createdAt": "2025-12-31T09:41:09.090Z"
+    },
+    {
+      "id": 1767174174396,
+      "subject": "",
+      "content": "how are you",
+      "senderId": "dev-doctor",
+      "receiverId": "dev-user",
+      "appointmentId": null,
+      "isRead": false,
+      "priority": "medium",
+      "expiresAt": null,
+      "createdAt": "2025-12-31T09:42:54.396Z"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "userId": "dev-doctor",
+      "departmentId": 1,
+      "specialty": "General Medicine",
+      "qualification": "MD",
+      "experience": 10,
+      "consultationFee": "500.00",
+      "bio": "Experienced general physician with over 10 years of practice",
+      "isAvailable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": "doctor-1-user",
+      "departmentId": 1,
+      "specialty": "Cardiology",
+      "qualification": "MD, FACC",
+      "experience": 15,
+      "consultationFee": "800.00",
+      "bio": "Board-certified cardiologist specializing in heart disease prevention and treatment",
+      "isAvailable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": "doctor-2-user",
+      "departmentId": 5,
+      "specialty": "Orthopedic Surgery",
+      "qualification": "MD, MS Ortho",
+      "experience": 12,
+      "consultationFee": "900.00",
+      "bio": "Specialized in joint replacements and sports medicine",
+      "isAvailable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "userId": "doctor-3-user",
+      "departmentId": 2,
+      "specialty": "Dermatology",
+      "qualification": "MD, FAAD",
+      "experience": 8,
+      "consultationFee": "600.00",
+      "bio": "Expert in skin disorders and cosmetic dermatology",
+      "isAvailable": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "dev-user",
+      "email": "dev@localhost",
+      "firstName": "Dev",
+      "lastName": "User",
+      "profileImageUrl": "",
+      "role": "patient",
+      "phone": "+1 (555) 123-4567",
+      "dateOfBirth": "1985-06-15",
+      "gender": "Male",
+      "address": "123 Main St, City, State 12345",
+      "pushToken": null,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "dev-doctor",
+      "email": "dr.dev@hospital.com",
+      "firstName": "Dr. Dev",
+      "lastName": "User",
+      "profileImageUrl": "",
+      "role": "doctor",
+      "phone": "+1 (555) 111-2222",
+      "dateOfBirth": "1980-01-15",
+      "gender": "Female",
+      "address": "456 Medical Ave, Health City, HC 56789",
+      "pushToken": null,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "dev-admin",
+      "email": "admin@hospital.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "profileImageUrl": "",
+      "role": "admin",
+      "phone": "+1 (555) 777-8888",
+      "dateOfBirth": "1975-12-10",
+      "gender": "Other",
+      "address": "789 Admin Plaza, System City, SC 98765",
+      "pushToken": null,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "patient-1",
+      "email": "john.doe@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "profileImageUrl": "",
+      "role": "patient",
+      "phone": "+1 (555) 234-5678",
+      "dateOfBirth": "1978-03-22",
+      "gender": "Male",
+      "address": "456 Oak St, Town, State 67890",
+      "pushToken": null,
+      "createdAt": "2024-02-01T00:00:00.000Z",
+      "updatedAt": "2024-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "patient-2",
+      "email": "jane.smith@example.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "profileImageUrl": "",
+      "role": "patient",
+      "phone": "+1 (555) 345-6789",
+      "dateOfBirth": "1982-11-08",
+      "gender": "Female",
+      "address": "789 Pine St, Village, State 54321",
+      "pushToken": null,
+      "createdAt": "2024-02-15T00:00:00.000Z",
+      "updatedAt": "2024-02-15T00:00:00.000Z"
+    },
+    {
+      "id": "patient-3",
+      "email": "mike.johnson@example.com",
+      "firstName": "Mike",
+      "lastName": "Johnson",
+      "profileImageUrl": "",
+      "role": "patient",
+      "phone": "+1 (555) 456-7890",
+      "dateOfBirth": "1990-07-14",
+      "gender": "Male",
+      "address": "321 Elm St, Suburb, State 13579",
+      "pushToken": null,
+      "createdAt": "2024-03-01T00:00:00.000Z",
+      "updatedAt": "2024-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "doctor-1-user",
+      "email": "dr.sarah.smith@hospital.com",
+      "firstName": "Sarah",
+      "lastName": "Smith",
+      "profileImageUrl": "",
+      "role": "doctor",
+      "phone": "+1 (555) 111-2222",
+      "dateOfBirth": "1975-08-20",
+      "gender": "Female",
+      "address": "123 Hospital Dr, Medical City, MC 12345",
+      "pushToken": null,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "doctor-2-user",
+      "email": "dr.michael.johnson@hospital.com",
+      "firstName": "Michael",
+      "lastName": "Johnson",
+      "profileImageUrl": "",
+      "role": "doctor",
+      "phone": "+1 (555) 333-4444",
+      "dateOfBirth": "1970-05-15",
+      "gender": "Male",
+      "address": "456 Clinic Ave, Health Town, HT 67890",
+      "pushToken": null,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "doctor-3-user",
+      "email": "dr.emily.brown@hospital.com",
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "profileImageUrl": "",
+      "role": "doctor",
+      "phone": "+1 (555) 555-6666",
+      "dateOfBirth": "1978-12-03",
+      "gender": "Female",
+      "address": "789 Medical Plaza, Wellness City, WC 54321",
+      "pushToken": null,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "doctorSchedules": []
+}

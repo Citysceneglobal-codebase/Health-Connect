@@ -1,0 +1,163 @@
+Healthcare Portal & Mobile App – Product Requirements Document (Updated)
+1. Introduction
+The platform consists of a Patient App, Doctor App/Portal, and Admin Portal, providing a unified ecosystem for healthcare services, digital records, and appointment management.
+________________________________________
+2. User Types
+1. Patient Login
+Used for booking appointments, viewing records, reports, prescriptions, payments, and managing family profiles.
+2. Doctor Login
+Used for managing appointments, viewing patient details, adding prescriptions, viewing medical history, and updating visit notes.
+3. Admin Login
+Used for master data management: doctors, schedules, departments, reports, billing, and system monitoring.
+________________________________________
+3. Core Modules & Features
+________________________________________
+A. Patient Module
+1. Appointment Booking
+•	Search by doctor, department, specialty
+•	View availability and book in few taps
+•	Track upcoming & past visits
+•	Cancel / reschedule
+2. Digital Payments
+•	Pay for consultations, tests & services
+•	View/download bills & receipts
+3. e-Health Records
+•	Lab reports
+•	Radiology reports
+•	Prescriptions
+•	Visit summaries
+•	Discharge summaries
+•	All documents stored indefinitely
+4. My Documents Repository
+•	Central folder for all medical documents
+•	Easy download/share
+5. My Vitals
+•	Add BP, glucose, heart rate, weight, BMI
+•	Graph view
+6. My Allergies
+•	Patients can add allergies:
+o	Medicine allergies
+o	Food allergies
+o	Other medical sensitivities
+•	Shown to doctors automatically during visit
+7. Family Member Management
+•	Add parents, children, spouse
+•	Switch between profiles easily
+•	Track each member’s medical data
+8. Report Notifications
+•	Instant alerts for new lab or radiology reports
+9. Lab Test Booking
+•	Browse tests
+•	Book home sample or in-hospital tests
+________________________________________
+B. Doctor Panel (Doctor Login)
+1. Dashboard
+•	Today’s appointments list
+•	Next patient queue
+•	Quick profile lookup
+2. View Patient Details
+When a doctor opens a patient’s appointment, they can see:
+•	Patient demographics
+•	Past visit history
+•	Past prescriptions
+•	Lab & radiology reports
+•	Discharge summaries
+•	Allergies (highlighted clearly)
+•	Vitals (if added by patient)
+3. Prescription Management
+Doctors can add prescriptions using:
+Medicine Warehouse (Master Medicine List)
+•	Centralized list of all medicines
+•	Search & select medicines by name
+•	Add dosage, frequency, duration, notes
+•	Add multiple medicines
+•	Prescriptions automatically saved forever
+•	Immediately visible in patient’s app
+4. Add Visit Notes
+•	Doctor can add diagnosis
+•	Additional comments
+•	Advice & instructions
+5. Upload/Approve Reports
+•	Doctors can upload PDFs (optional)
+•	Approve lab/radiology reports if required
+6. Quick Actions
+•	Re-prescribe previous prescriptions
+•	Flag important health alerts
+•	Mark follow-up required
+________________________________________
+C. Admin Portal (Admin Login)
+1. Master Data Management
+•	Add/edit doctors
+•	Departments & specialties
+•	Schedules & availability
+•	Medicine warehouse (full list of medicines)
+2. Appointment & Queue Management
+•	Monitor bookings
+•	Manage patient flow
+3. Report Management
+•	Upload lab/radiology results
+•	Assign to correct patient
+•	Trigger notifications
+4. Billing & Payments
+•	Monitor transactions
+•	Manage invoices & refunds
+5. User Management
+•	Manage patient & doctor accounts
+•	Reset passwords
+•	View activity logs
+________________________________________
+4. Additional Features (Minimal, Useful, Not Complicated)
+1. Smart Search
+•	Search doctors, departments, medicines, reports, visits
+2. Simple UI
+•	Large buttons, clean screens
+•	Minimal steps for each action
+3. Role-Based Views
+•	Patients see only patient features
+•	Doctors see only doctor features
+•	Admin sees complete dashboard
+4. Secure Messaging (Optional)
+•	Doctor ↔ Patient message after consultation
+•	Useful for follow-up clarifications
+5. Appointment Status Updates
+•	Confirmed, Cancelled, Completed
+•	Real-time notifications
+6. Favorites
+•	Patients can mark preferred doctors
+•	Doctors can mark important patients for follow-up
+________________________________________
+5. System Architecture Overview
+•	Patient App (iOS/Android/Web)
+•	Doctor App/Portal (Web + App optional)
+•	Admin Portal (Web)
+•	Backend API
+•	Database (Records, schedules, prescriptions)
+•	Medicine Database Repository
+•	Secure File Storage (Reports, docs)
+•	Payment Gateway
+•	Notification System (SMS/Email/Push)
+________________________________________
+6. Security
+•	End-to-end encrypted data
+•	Role-based access
+•	Audit logs for admin actions
+•	Secure storage with restricted permissions
+________________________________________
+7. Design Principles
+•	Minimal screens
+•	Fewer steps for every task
+•	Elderly-friendly UI
+•	High contrast, readable fonts
+•	Smooth workflow: Book → Pay → Visit → Report → Records
+________________________________________
+8. Summary
+This PRD outlines a simple, powerful, and user-friendly healthcare platform with structured roles for Patients, Doctors, and Admin.
+It enables:
+•	Easy appointment booking
+•	Quick access to all health records
+•	Direct prescription creation by doctors
+•	Complete patient history access
+•	Allergy tracking
+•	Digital payments & document storage
+•	Efficient admin control
+
