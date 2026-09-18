@@ -42,17 +42,6 @@ app.use((req, res, next) => {
 // Parse JSON bodies
 app.use(express.json());
 
-// Serve static files in production
-if (process.env.NODE_ENV === "production") {
-  const staticPath = resolve(__dirname, "..", "client", "dist");
-  app.use(express.static(staticPath));
-
-  // Serve index.html for all routes in production
-  app.get("*", (req, res) => {
-    res.sendFile(resolve(staticPath, "index.html"));
-  });
-}
-
 const httpServer = createServer(app);
 
 declare module "http" {
@@ -156,7 +145,13 @@ function validateProductionConfig() {
 
 // Import serveStatic function
 async function serveStatic(app: express.Application) {
-  const staticPath = resolve(__dirname, "..", "client", "dist");
+  const fs = await import("fs");
+  const candidates = [
+    resolve(__dirname, "public"),
+    resolve(__dirname, "..", "dist", "public"),
+    resolve(__dirname, "..", "client", "dist"),
+  ];
+  const staticPath = candidates.find(p => fs.existsSync(p)) || candidates[0];
   app.use(express.static(staticPath));
 
   // Serve index.html for all routes in production

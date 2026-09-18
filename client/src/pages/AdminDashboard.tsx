@@ -149,10 +149,10 @@ export default function AdminDashboard() {
     queryKey: ["/api/admin/appointments/today"],
   });
 
-  // Use real data only - no fallback to mock data
-  const effectiveDoctors = doctors;
-  const effectiveDepartments = departments;
-  const effectiveAppointments = todayAppointments;
+  // Use real data safely - ensure array types
+  const effectiveDoctors = Array.isArray(doctors) ? doctors : [];
+  const effectiveDepartments = Array.isArray(departments) ? departments : [];
+  const effectiveAppointments = Array.isArray(todayAppointments) ? todayAppointments : [];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6">

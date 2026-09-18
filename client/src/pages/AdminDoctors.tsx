@@ -200,7 +200,8 @@ export default function AdminDoctors() {
     deleteDoctorMutation.mutate(selectedDoctor.id);
   };
 
-  const filteredDoctors = doctors?.filter(doc => {
+  const doctorList = Array.isArray(doctors) ? doctors : [];
+  const filteredDoctors = doctorList.filter(doc => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -209,7 +210,7 @@ export default function AdminDoctors() {
       doc.specialty?.toLowerCase().includes(query) ||
       doc.user?.email?.toLowerCase().includes(query)
     );
-  }) || [];
+  });
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-6">
@@ -296,7 +297,7 @@ export default function AdminDoctors() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          {departments?.map(dept => (
+                          {(Array.isArray(departments) ? departments : []).map(dept => (
                             <SelectItem key={dept.id} value={dept.id.toString()}>
                               {dept.name}
                             </SelectItem>

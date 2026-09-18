@@ -164,9 +164,7 @@ export async function setupAuth(app: Express) {
         res.header("Access-Control-Allow-Origin", "http://localhost:5173");
         res.header("Access-Control-Allow-Credentials", "true");
         console.log("Server: Role set successfully:", role, "Cookies set:", res.get('Set-Cookie'));
-        // Redirect to home page after setting role
-        console.log("Server: Redirecting to http://localhost:5007/");
-        res.redirect("http://localhost:5007/");
+        res.redirect("/");
       } else {
         console.log("Server: Invalid role:", role);
         res.status(400).json({ message: "Invalid role" });
@@ -239,11 +237,9 @@ export async function setupAuth(app: Express) {
 }
 
 export const isAuthenticated: RequestHandler = async (req, res, next) => {
-  if (process.env.NODE_ENV !== "production") {
-    // Local dev bypass: always authenticated with mock user data
-    const devRole = req.cookies?.devRole || 'patient';
-    
-    // Set up mock user object with claims
+  // Check for devRole cookie (works for dev role switcher and demo login in all environments)
+  const devRole = req.cookies?.devRole;
+  if (devRole) {
     let userId = "dev-user";
     if (devRole === "doctor" || devRole === "dev-doctor") {
       userId = "dev-doctor";
@@ -256,21 +252,34 @@ export const isAuthenticated: RequestHandler = async (req, res, next) => {
     } else if (devRole === "admin") {
       userId = "dev-admin";
     }
-    
-    // Set req.user with claims structure expected by routes
+
     (req as any).user = {
       claims: {
         sub: userId,
-        email: devRole === "doctor" ? "dr.dev@hospital.com" : "dev@localhost",
-        first_name: devRole === "doctor" ? "Dr. Dev" : "Dev",
+        email: devRole === "doctor" ? "dr.dev@hospital.com" : devRole === "admin" ? "admin@hospital.com" : "dev@localhost",
+        first_name: devRole === "doctor" ? "Dr. Dev" : devRole === "admin" ? "Admin" : "Dev",
         last_name: "User",
         role: devRole
       }
     };
-    
     return next();
   }
-  if ((req as any).isAuthenticated()) {
+
+  if (process.env.NODE_ENV !== "production") {
+    // Local dev bypass default when no devRole cookie
+    (req as any).user = {
+      claims: {
+        sub: "dev-user",
+        email: "dev@localhost",
+        first_name: "Dev",
+        last_name: "User",
+        role: "patient"
+      }
+    };
+    return next();
+  }
+
+  if ((req as any).isAuthenticated && (req as any).isAuthenticated()) {
     return next();
   }
   res.status(401).json({ message: "Unauthorized" });

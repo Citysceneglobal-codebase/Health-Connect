@@ -52,15 +52,14 @@ export async function registerRoutes(httpServer: Server, app: Express): Promise<
   // ============================================================
   app.get("/api/auth/user", isAuthenticated, async (req: any, res) => {
     console.log("Server: /api/auth/user called, cookies:", req.cookies);
-    // In development mode, return the mock user data if role is selected
-    if (process.env.NODE_ENV !== "production") {
-      // Get role from cookie if available
-      const devRole = req.cookies?.devRole;
-      if (!devRole) {
+    // Check if role is selected via cookie (demo / dev login)
+    const devRole = req.cookies?.devRole;
+    if (devRole || process.env.NODE_ENV !== "production") {
+      if (!devRole && process.env.NODE_ENV !== "production") {
         console.log("Server: No devRole cookie, returning null");
         return res.json(null);
       }
-      console.log("Server: Dev mode, devRole from cookie:", devRole);
+      console.log("Server: devRole from cookie:", devRole);
 
       // Default mock user data based on role - use consistent IDs
       let mockUserData = {
@@ -2174,7 +2173,14 @@ export async function registerRoutes(httpServer: Server, app: Express): Promise<
   // Admin routes
   const isAdmin = async (req: any, res: any, next: any) => {
     try {
-      const userId = req.user.claims.sub;
+      const userRole = req.user?.claims?.role || req.cookies?.devRole;
+      if (userRole === "admin") {
+        return next();
+      }
+      const userId = req.user?.claims?.sub;
+      if (!userId) {
+        return res.status(403).json({ message: "Admin access required" });
+      }
       const user = await storage.getUser(userId);
       if (!user || user.role !== "admin") {
         return res.status(403).json({ message: "Admin access required" });

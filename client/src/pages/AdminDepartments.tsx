@@ -102,10 +102,13 @@ export default function AdminDepartments() {
     queryKey: ["/api/admin/doctors"],
   });
 
-  // Count doctors per department
-  const doctorCounts = doctors?.reduce((acc: Record<number, number>, doctor: any) => {
-    const deptId = doctor.departmentId;
-    acc[deptId] = (acc[deptId] || 0) + 1;
+  // Count doctors per department safely
+  const doctorList = Array.isArray(doctors) ? doctors : [];
+  const doctorCounts = doctorList.reduce((acc: Record<number, number>, doctor: any) => {
+    const deptId = doctor?.departmentId;
+    if (deptId) {
+      acc[deptId] = (acc[deptId] || 0) + 1;
+    }
     return acc;
   }, {}) || {};
 
@@ -229,14 +232,15 @@ export default function AdminDepartments() {
     }
   };
 
-  const filteredDepartments = departments?.filter(dept => {
+  const departmentList = Array.isArray(departments) ? departments : [];
+  const filteredDepartments = departmentList.filter(dept => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
       dept.name.toLowerCase().includes(query) ||
       dept.description?.toLowerCase().includes(query)
     );
-  }) || [];
+  });
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-6">

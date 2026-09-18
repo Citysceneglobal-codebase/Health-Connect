@@ -116,11 +116,13 @@ export default function AdminSchedules() {
   });
 
   const getScheduleForDay = (doctorId: string, dayOfWeek: number) => {
-    return schedules?.find(s => s.doctorId === parseInt(doctorId) && s.dayOfWeek === dayOfWeek && s.isActive);
+    const list = Array.isArray(schedules) ? schedules : [];
+    return list.find(s => s.doctorId === parseInt(doctorId) && s.dayOfWeek === dayOfWeek && s.isActive);
   };
 
   const getBlockedSlotsForDate = (date: Date) => {
-    return blockedSlots?.filter(slot => isSameDay(new Date(slot.date), date)) || [];
+    const list = Array.isArray(blockedSlots) ? blockedSlots : [];
+    return list.filter(slot => isSameDay(new Date(slot.date), date));
   };
 
   const getSlotStatusColor = (slot: any) => {
@@ -194,7 +196,7 @@ export default function AdminSchedules() {
                   <SelectValue placeholder="Choose a doctor to manage schedules" />
                 </SelectTrigger>
                 <SelectContent>
-                  {doctors?.map(doctor => (
+                  {(Array.isArray(doctors) ? doctors : []).map(doctor => (
                     <SelectItem key={doctor.id} value={doctor.id.toString()}>
                       Dr. {doctor.user?.firstName} {doctor.user?.lastName} - {doctor.specialty}
                     </SelectItem>
@@ -328,7 +330,7 @@ export default function AdminSchedules() {
               <CardContent>
                 {schedulesLoading ? (
                   <Skeleton className="h-32 w-full" />
-                ) : schedules && schedules.length > 0 ? (
+                ) : Array.isArray(schedules) && schedules.length > 0 ? (
                   <div className="space-y-3">
                     {schedules.map(schedule => (
                       <div key={schedule.id} className="flex items-center justify-between p-3 border rounded-lg">
